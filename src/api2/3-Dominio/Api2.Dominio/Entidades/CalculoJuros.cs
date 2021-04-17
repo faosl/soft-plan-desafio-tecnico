@@ -28,14 +28,17 @@ namespace Api2.Dominio.Entidades
 
         public CalculoJuros Processar()
         {
-            var resultadoFormula = Math.Pow(ValorInicial * (1 + TaxaJuros), TempoEmMeses);
+            var resultadoFormula = ValorInicial * Math.Pow(1 + TaxaJuros, TempoEmMeses);
 
             ValorFinal = Truncar(resultadoFormula);
 
             return this;
         }
 
-        private double Truncar(double valor) => Math.Truncate(100 * valor) / 100;
+        private double Truncar(double valor, int casasDecimais = 2) {
+            var valorTruncagem = Math.Pow(10, casasDecimais);
+            return Math.Truncate(valorTruncagem * valor) / valorTruncagem;
+        }
 
     }
 }
