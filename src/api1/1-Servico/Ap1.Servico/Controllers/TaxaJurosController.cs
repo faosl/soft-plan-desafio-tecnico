@@ -9,7 +9,7 @@ namespace Ap1.Servico.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TaxaJurosController : Controller
+    public class TaxaJurosController : ControllerBase
     {
         private readonly ITaxaJurosApp _taxaJurosApp;
 
