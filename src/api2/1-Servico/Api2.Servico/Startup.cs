@@ -42,7 +42,7 @@ namespace Api2.Servico
 
             services.AddHttpClient<ITaxaJurosFacade, TaxaJurosFacade>(client =>
             {
-                client.BaseAddress = new Uri(Configuration["TaxaJuros:UrlBase"]);
+                client.BaseAddress = new Uri(Configuration["URL_BASE_TAXA_JUROS"]);
             }).AddPolicyHandler(GetRetryPolicy());
 
             services.AddSwaggerGen(c =>
@@ -56,9 +56,9 @@ namespace Api2.Servico
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();                
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api2.Servico v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api2.Servico v1"));                
             }
 
             app.UseHttpsRedirection();

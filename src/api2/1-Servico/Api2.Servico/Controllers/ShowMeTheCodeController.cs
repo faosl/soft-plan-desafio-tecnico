@@ -23,7 +23,7 @@ namespace Api2.Servico.Controllers
         [HttpGet]
         public IActionResult Get()
         {            
-            return Ok(new { UrlGit = _configuration["UrlGit"] });
+            return Ok(new { UrlGit = _configuration["URL_GIT"] });
         }
     }
 }
