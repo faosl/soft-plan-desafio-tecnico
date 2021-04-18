@@ -2,12 +2,15 @@
 
 # REQUISITOS
 Docker instalado.
+
 Antes de executar os comandos abaixos verifique se portas 9090 e 9191 estão liberadas no host.
 
 # RODAR APLICAÇÃO
-> git clone https://github.com/faosl/soft-plan-desafio-tecnico
-> cd soft-plan-desafio-tecnico
-> docker-compose up
+git clone https://github.com/faosl/soft-plan-desafio-tecnico
+
+cd soft-plan-desafio-tecnico
+
+docker-compose up
 
 # ACESSO AOS SWAGGERS
 Api1: http://localhost:9090/swagger
