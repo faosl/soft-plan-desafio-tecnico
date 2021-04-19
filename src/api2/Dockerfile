@@ -8,8 +8,8 @@ COPY /src/api2 .
 
 RUN dotnet restore 1-Servico/Api2.Servico/Api2.Servico.csproj
 
-#WORKDIR /src/3-Dominio/Api2.Dominio.Teste
-#RUN dotnet test
+WORKDIR /src/3-Dominio/Api2.Dominio.Teste
+RUN dotnet test
 
 WORKDIR /src/1-Servico/Api2.Servico
 RUN dotnet build Api2.Servico.csproj -c Release -o /app

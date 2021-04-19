@@ -7,8 +7,8 @@ WORKDIR /src
 COPY /src/api1 .
 RUN dotnet restore 1-Servico/Ap1.Servico/Ap1.Servico.csproj
 
-#WORKDIR /src/3-Dominio/Api1.Dominio.Teste
-#RUN dotnet test
+WORKDIR /src/3-Dominio/Api1.Dominio.Teste
+RUN dotnet test
 
 WORKDIR /src/1-Servico/Ap1.Servico
 RUN dotnet build Ap1.Servico.csproj -c Release -o /app
