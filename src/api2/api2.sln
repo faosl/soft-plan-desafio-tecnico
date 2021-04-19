@@ -11,15 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Dominio", "3-Dominio", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{7A0E9CA5-5C1B-40C6-AAE2-5C69D2AA1FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Dominio", "3-Dominio\Api2.Dominio\Api2.Dominio.csproj", "{2E9DBA96-94F5-451B-B24E-826D93BF8E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api2.Dominio", "3-Dominio\Api2.Dominio\Api2.Dominio.csproj", "{2E9DBA96-94F5-451B-B24E-826D93BF8E46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Aplicacao", "2-Aplicacao\Api2.Aplicacao\Api2.Aplicacao.csproj", "{34A7287F-4AA1-490E-A688-C261289F57EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api2.Aplicacao", "2-Aplicacao\Api2.Aplicacao\Api2.Aplicacao.csproj", "{34A7287F-4AA1-490E-A688-C261289F57EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Infra.Facade", "4-Infra\Api2.Infra.Facade\Api2.Infra.Facade.csproj", "{624654EA-4C3D-4882-9C63-67A931D68100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api2.Infra.Facade", "4-Infra\Api2.Infra.Facade\Api2.Infra.Facade.csproj", "{624654EA-4C3D-4882-9C63-67A931D68100}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Servico", "1-Servico\Api2.Servico\Api2.Servico.csproj", "{74DD8D7B-F35F-47EF-9497-CDF62E683DD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api2.Servico", "1-Servico\Api2.Servico\Api2.Servico.csproj", "{74DD8D7B-F35F-47EF-9497-CDF62E683DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Dominio.Teste", "3-Dominio\Api2.Dominio.Teste\Api2.Dominio.Teste.csproj", "{F085CADF-4A9F-4BBF-814D-747903D44682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api2.Dominio.Teste", "3-Dominio\Api2.Dominio.Teste\Api2.Dominio.Teste.csproj", "{F085CADF-4A9F-4BBF-814D-747903D44682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api2.Servico.Teste", "1-Servico\Api2.Servico.Teste\Api2.Servico.Teste.csproj", "{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{F085CADF-4A9F-4BBF-814D-747903D44682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F085CADF-4A9F-4BBF-814D-747903D44682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F085CADF-4A9F-4BBF-814D-747903D44682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{624654EA-4C3D-4882-9C63-67A931D68100} = {7A0E9CA5-5C1B-40C6-AAE2-5C69D2AA1FD2}
 		{74DD8D7B-F35F-47EF-9497-CDF62E683DD7} = {797A09B5-4D1D-4AC8-86CB-26F30192D985}
 		{F085CADF-4A9F-4BBF-814D-747903D44682} = {08985C25-1592-4F58-8BD6-3870E41BD747}
+		{8F5A66CC-6314-4CBF-BFBD-74C20FCF5D90} = {797A09B5-4D1D-4AC8-86CB-26F30192D985}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78F7045B-6051-46A1-8A4A-3DF20A5BFE73}
